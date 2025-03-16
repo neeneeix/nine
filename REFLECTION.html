@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REFLECTION</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="mystyle.css">
+
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fefefe;
+        }
+
+        .container {
+            width: 900px;
+            height: 900px;
+            background-color: #fefefe;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            overflow: hidden;
+            margin-top: 50px; 
+        }
+
+        .content-table {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            position: absolute;
+            bottom: 40px;
+        }
+
+        .button-container img {
+            width: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main Circle -->
+    <div class="container">
+        
+        <!-- Table Content -->
+        <table class="content-table" border="0" cellspacing="0" cellpadding="0">
+            <tr><br><br>
+                <td><img src="ICON1.png" width="80px"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1 class="slackey-regular">reflection.ᐟ𝄞</h1>
+			<p style="font-family: Times New Roman; color: #4A443E; font-size: 16px;">For the last time, hello! This is my reflection for the fourth quarter. I suppose what I find interesting is how my experience in this class changed slowly <i>but surely (!)</i> in this class. I'd like to first thank Ms. Uminga though. Miss, even with everything that you've let us known happened to you, you still managed to teach us genuinely. Throughout your sicknesses you still powered through and we truly appreciate that po.<br><br>Javascript will be the highlight here. My journey with Javascript was messy to say the least. I wouldn't say I fully understand it, but I know with time and a little more forced interaction with this thing I'll get used to it.<br><br>Once again, I'm thankful for this opportunity to go through ICT 9. ICT has always been an 'okay' subject for me. I wasn't a fan of Grade 7's curriculum, but my prayers were answered when we got to do coding for Grade 8 and 9! It's a valuable life skill I'm thankful we were given a chance for. Since this quarter isn't technically over I won't go with the ending lines yet.. but, I wish my future self the best to study for the periodicals. I wish Ms Uminga the best AND MAY HER TRANSFER TO GRADE 10 COME TO FRUITION. ( •̀ ω •́ )✧ </p>
+
+            <a href="COMPILATION.html">
+                <img src="BUTTON4.png" width="100">
+            </a>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Button Container -->
+        <div class="button-container">
+            <a href="index.html" onclick="showAlert(event, 'index.html')">
+                <img src="IMAGE3.png">
+            </a>
+            <a href="LESSONS.html" onclick="showAlert(event, 'LESSONS.html')">
+                <img src="BUTTON1.png">
+            </a>
+            <a href="REFLECTION.html" onclick="showAlert(event, 'REFLECTION.html')">
+                <img src="BUTTON3.png">
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Footer (now correctly placed right under the circle) -->
+    <footer>
+        <audio controls loop autoplay muted>
+            <source src="MUSIC2.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+        <br>© 2025 Nine's Portfolio | All rights reserved.
+    </footer>
+
+    <!-- Button Alerts -->
+<script>
+    function showAlert(event, url) {
+        event.preventDefault(); // Prevents immediate navigation
+
+        let message;
+
+        // Check conditions before allowing navigation
+        if (url !== "ABOUTME.html" && !localStorage.getItem("visitedAboutMe")) {
+            alert("Oops! You need to visit 'About Me' first before accessing other pages! (╯°□°）╯︵ ┻━┻");
+            return;
+        }
+
+        if (url === "REFLECTION.html" && !localStorage.getItem("visitedLessons")) {
+            alert("Wait! You need to visit 'Lessons' first before viewing the reflection! (⊙_⊙;)");
+            return;
+        }
+
+        // Assign messages for each page
+        switch (url) {
+            case "ABOUTME.html":
+                message = "01 | This will lead you to my about me! ヽ（≧□≦）ノ";
+                break;
+            case "LESSONS.html":
+                message = "02 | This will lead you to my 4th Quarter lessons! (●'◡'●)";
+                break;
+            case "REFLECTION.html":
+                message = "03 | This will lead you to my final reflection.. ∑( 口 ||";
+                break;
+            default:
+                message = "Uh oh! This isn't a page..";
+        }
+
+        // Confirmation before navigating
+        if (confirm(message)) {
+            if (url === "ABOUTME.html") {
+                localStorage.setItem("visitedAboutMe", "true"); // Marks ABOUTME.html as visited
+            }
+            if (url === "LESSONS.html") {
+                localStorage.setItem("visitedLessons", "true"); // Marks LESSONS.html as visited
+            }
+            window.location.href = url; // Redirect after confirmation
+        }
+    }
+</script>
+
+
+</body>

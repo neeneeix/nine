@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAINSITE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"> <!-- from google fonts!! (using embed method of getting custom fonts) -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mystyle.css">
+  <style>
+    .table1 th, td {
+      border-radius: 10px;
+    }
+    .container {
+      width: 70%;
+      margin: 20px auto;
+      background-color: #fefefe;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-radius: 10px;
+      vertical-align: middle
+    }
+    a:link {
+     color: #333343;
+    }
+    
+    a:visited {
+      color: #717187;
+    }
+  </style>
+</head>
+<body>
+<div class="container" text-align: center; style="padding-bottom: 120px;">
+<table border="1" align="center" cellpadding="0" width="900" background="BACKGROUND1.gif">
+	<tr bgcolor="#fefcfb"><!-- DECOR THINGY -->
+		<td width="70" height="70" valign="center" align="center"><a href="PASSWORD.html"><img src="ICON1.png" alt="[]" width="40" height="40"></a></td>
+		<td colspan="2">
+			<table align="center" width="800">
+				<tr><!-- HEADER -->
+					<td align="left"><p style="font-family:Times New Roman; color:#231f1e; font-size:23px;"><i>Nine's Portfolio</i> ✩°｡ ⋆⸜ 🎧✮</p></td>
+					<td align="right"><p style="font-family:Times New Roman; color:#231f1e; font-size:20;">Quarter 2 | <a href="https://neeneeix.github.io/jeaninerefran/MAINSITE.html" target="_blank">Quarter 1</a> | ICT 9</p></td>
+				</tr>
+			</table>
+
+	</tr>
+	<tr bgcolor="#fefcfb">
+		<td><!-- LESSON HYPERLINKS -->
+			<table align="center" border="0">
+				<tr>
+					<td><a target="_blank" href="LESSON12.html"><img src="BUTTON3.png" alt="Lesson 1" width="50" height="50" style="padding-bottom:30px;"><br></a></td>
+				</tr>
+				<tr>
+					<td><a target="_blank" href="LESSON3.html"><img src="BUTTON4.png" alt="Lesson 2" width="50" height="50" style="padding-bottom:30px;"><br></a></td>
+				</tr>
+				<tr>
+					<td><a target="_blank" href="LESSON45.html"><img src="BUTTON5.png" alt="Lesson 3" width="50" height="50" style="padding-bottom:30px;"><br></a></td>
+				</tr>
+				<tr>
+					<td><a target="_blank" href="LESSON67.html"><img src="BUTTON6.png" alt="Lesson 4" width="50" height="50" style="padding-bottom:30px;"><br></a></td>
+				</tr>
+			</table>
+		</td>
+		<td><!-- MAINSITEEEEEE :33 -->
+		<table><tr bgcolor="#fffffc">
+		<td><img src="GIF1.gif" height="200" style="padding-left:10px; padding-right:7px; padding-top:10px;"></td>
+		<td width="400"><br><h1 class="slackey-regular">nine.ᐟ𝄞</h1>
+						<font align="center" style="font-family:Times New Roman; color:#4A443E; font-size:18px;">୭ ˚. SHE/<u>HER</u> ♡ ˚.<i><span style="color:#5c6e85">4TEEN 						⟡</span></i></font><br>
+						<font align="center" style="font-family:Times New Roman; color:#646656; font-size:20;"><span style="color:#696b8a">filo!</span> | <b>ess '22 							lpcnshs '28<b><br><span style="color:#515262">estj ꒰ᐢ. .ᐢ꒱ : aries</span> mar 22 <span style="color:#8692c3">𖦹</span> </font></p>
+					</td>
+				</tr>
+				<tr bgcolor="#fffffc">
+					<td align="center" valign="center" colspan="2"><hr size="1" width="700" color="#596710"><br><img src="GIF2.gif"><p style="color:#5c544f; font-size:17;"><b>Check these out:</b><br><i>Want the lessons? Click the buttons on the sidebar ♡</i></p>
+						<table border="1" bordercolor="#5E5651" cellpadding="7" cellspacing="9">
+						<tr align="center" valign="center"><td><a href="ABOUTME.html" target="_self" style="color:#838cb3;"><i>About Me °✩</i></a></td><td><a href="ACTIVITIES.html" target="_self" style="color:#53608c;"><i>Second Quarter Activities °✩</i></a></td><td><a href="REFLECTIONS.html" target="_self" style="color:#565a69;"><i>Reflection °✩</i></a></td></tr></table><br><img src="DIVIDER1.gif" alt="[]">
+
+					</td>
+		</tr></table></td>
+	</tr>
+	<tr bgcolor="#fffffc">
+		<td colspan="2">
+			<table align="center" border="0">
+				<tr>
+					<td style="background-color: rgba(94, 92, 91, 0.2);"><a target="_blank" href="CITATIONS.html" style="color:#5E5C5B;"><u>Check here for sources/citations</u></a></td>
+				</tr>
+			</table></td></tr>
+</table>
+
+</div>
+    <!-- Footer -->
+<p align="center"><audio controls loop autoplay muted><source src="MUSIC2.mp3" type="audio/mpeg">Your browser does not support the audio tag.</audio><br>© 2024 Nine's Portfolio | All rights reserved.</p>
+</body>
+</html>

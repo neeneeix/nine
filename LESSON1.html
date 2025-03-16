@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LESSON1</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <style>
+    .table1 th, td {
+      border-radius: 10px;
+    }
+    .container {
+      width: 70%;
+      margin: 20px auto;
+      background-color: #fefefe;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-radius: 10px;
+      vertical-align: middle;
+    }
+    p {
+      padding: 0 10px;
+      font-family: "Times New Roman", Times, serif;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" style="padding-bottom: 120px;">
+  <table border="1" align="center" cellpadding="0" width="500" background="BACKGROUND1.gif">
+    <tr bgcolor="#fefcfb">
+      <td width="50" height="30" valign="center" align="center">
+        <a href="index.html">
+          <img src="ICON1.png" alt="[]" width="20">
+        </a>
+      </td>
+      <td colspan="2">
+        <table align="center" width="530">
+          <tr>
+            <td align="left">
+              <p style="font-family: Times New Roman; color: #231f1e; font-size: 30px;">Nine's Portfolio ✩°｡ ꒰ᐢ. .ᐢ꒱</p>
+            </td>
+            <td align="right">
+              <p style="font-family: Times New Roman; color: #231f1e; font-size: 20px;">Quarter 4 | ICT 9</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr bgcolor="#fefcfb">
+      <td colspan="2">
+        <font style="font-size: 30px;"><i>Event and Event Handlers</i></font><br>
+        <font color="#464f62">+ their uses</font>
+        <ul>
+          <li>Detected by JavaScript to create dynamic web pages</li>
+          <li>Actions that are triggered either by mouse click, function calls, keyboard strokes, loading of images, submitting an HTML form, etc.</li>
+        </ul>
+
+        <p>→ Events are usually used in connection with functions</p>
+        <p>→ These functions will not work without a force that will trigger them</p>
+
+        <img src="SAMPLE.png" width="400"><br><br>
+
+        <font color="#bda196">
+          <a href="#" onclick="showAlertBox(); return false;" style="text-decoration: none; color: inherit;">Popup Boxes</a>
+        </font>
+        <p>Popup boxes are windows that pop out of the screen, appearing before a page loads, as an effect of an event, or before leaving a page. JavaScript has three types: alert boxes, user-input prompt boxes, and confirm boxes. They are useful for warnings, gathering user input, or verifying actions.</p>
+
+        <font color="#bda196">
+          <a href="#" onclick="showPromptBox(); return false;" style="text-decoration: none; color: inherit;">User-Input Prompt Box</a>
+        </font>
+        <p>This is used when data input is required before entering a page. Users must select “OK” or “Cancel.” If they choose “OK,” the prompt box returns their input; otherwise, it returns null.</p>
+
+        <font color="#bda196">
+          <a href="#" onclick="showConfirmBox(); return false;" style="text-decoration: none; color: inherit;">Confirm Box</a>
+        </font>
+        <p>The confirm box asks the user to verify or accept something. They must choose “OK” or “Cancel.” If they select “OK,” it returns true; otherwise, it returns false.</p>
+      </td>
+    </tr>
+
+    <tr bgcolor="#fefcfb">
+      <td colspan="2">
+        <br>
+        <font color="#464f62"><i>Ready for the next lesson? (click the image)</i></font><br>
+        <a href="LESSON2&3.html">
+          <img src="BUTTON5.png" width="50">
+        </a><br><br>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<script>
+  function showAlertBox() {
+    alert("This is an example of an alert box!");
+  }
+
+  function showPromptBox() {
+    let userInput = prompt("Please enter your name: ^^");
+    if (userInput) {
+      alert("Hello, " + userInput + "!");
+    } else {
+      alert("No input provided.");
+    }
+  }
+
+  function showConfirmBox() {
+    let confirmation = confirm("Do you confirm this action?");
+    if (confirmation) {
+      alert("Action confirmed!");
+    } else {
+      alert("Action canceled.");
+    }
+  }
+</script>
+
+<p style="position: fixed; bottom: 0; width: 70.5%; text-align: center; background-color: #f8f8f8; margin: 0 auto; left: 0; right: 0; padding: 10px; box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);">
+  <audio controls loop autoplay muted>
+    <source src="MUSIC2.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+  <br>
+  © 2025 Nine's Portfolio | All rights reserved.
+</p>
+
+</body>
+</html>

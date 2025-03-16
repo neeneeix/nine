@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAINSITE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="mystyle.css">
+
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fefefe;
+        }
+
+        .container {
+            width: 600px;
+            height: 600px;
+            background-color: #fefefe;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            overflow: hidden;
+            margin-top: 50px;
+        }
+
+        .content-table {
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            position: absolute;
+            bottom: 40px;
+        }
+
+        .button-container img {
+            width: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <table class="content-table" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td><a href="PASSWORD.html" target="_self"><img src="ICON1.png" width="80px"><a/></td>
+            </tr>
+            <tr>
+                <td>
+                    <h1 class="slackey-regular">nine.ᐟ𝄞</h1>
+                    <p style="font-family: Times New Roman; color: #4A443E; font-size: 18px;">
+                        ୭ ˚. SHE/<u>HER</u> ♡ ˚.<i><span style="color:#a89394">4TEEN ⟡</span></i>
+                    </p>
+                    <p style="font-family: Times New Roman; color: #646656; font-size: 20px;">
+                        <span style="color:#bda196">filo!</span> | <b>ess '22 lpcnshs '28</b><br>
+                        <span style="color:#515262">estj ꒰ᐢ. .ᐢ꒱ : aries</span> mar 22 <span style="color:#ffe2e2">𖦹</span>
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <div class="button-container">
+            <a href="ABOUTME.html" onclick="showAlert(event, 'ABOUTME.html')">
+                <img src="BUTTON2.png">
+            </a>
+            <a href="LESSONS.html" onclick="showAlert(event, 'LESSONS.html')">
+                <img src="BUTTON1.png">
+            </a>
+            <a href="REFLECTION.html" onclick="showAlert(event, 'REFLECTION.html')">
+                <img src="BUTTON3.png">
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <audio controls loop autoplay muted>
+            <source src="MUSIC2.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+        <br>© 2025 Nine's Portfolio | All rights reserved.
+    </footer>
+
+<script>
+    function showAlert(event, url) {
+        event.preventDefault(); 
+
+        let message;
+
+        if (url !== "ABOUTME.html" && !localStorage.getItem("visitedAboutMe")) {
+            alert("Oops! You need to visit 'About Me' first before accessing other pages! (╯°□°）╯︵ ┻━┻");
+            return;
+        }
+
+        if (url === "REFLECTION.html" && !localStorage.getItem("visitedLessons")) {
+            alert("Wait! You need to visit 'Lessons' first before viewing the reflection! (⊙_⊙;)");
+            return;
+        }
+
+        switch (url) {
+            case "ABOUTME.html":
+                message = "01 | This will lead you to my about me! ヽ（≧□≦）ノ";
+                break;
+            case "LESSONS.html":
+                message = "02 | This will lead you to my 4th Quarter lessons! (●'◡'●)";
+                break;
+            case "REFLECTION.html":
+                message = "03 | This will lead you to my final reflection.. ∑( 口 ||";
+                break;
+            default:
+                message = "Uh oh! This isn't a page..";
+        }
+
+        if (confirm(message)) {
+            if (url === "ABOUTME.html") {
+                localStorage.setItem("visitedAboutMe", "true");
+            }
+            if (url === "LESSONS.html") {
+                localStorage.setItem("visitedLessons", "true");
+            }
+            window.location.href = url;
+        }
+    }
+</script>
+
+</body>
+</html>
